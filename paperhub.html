@@ -40,34 +40,27 @@
         <div class="PaperBox"> <a class="Classid">CHY1005</a><br> Introduction to Computational chemistry<br> Mid-term 2026<br>
             <a href="CHYpdf.html"><button class="Paper"> Paper</button></a></div>
         <div class="PaperBox"> <a class="Classid">PHY1001</a><br> Introduction to Computational Physics<br> Term-End 2025-26<br>
-            <a href="CHYpdf.html"><button class="Paper"> Paper</button></a></div>
+            <a href="#"><button class="Paper"> Paper</button></a></div>
     </div>
     <script>
-    
-    const searchInput = document.querySelector('.Searchbar input');
-    const paperBoxes = document.querySelectorAll('.PaperBox');
+        const searchInput = document.querySelector('.Searchbar input');
+        const paperBoxes = document.querySelectorAll('.PaperBox');
 
-    
-    searchInput.addEventListener('input', function () {
-        
-        const query = searchInput.value.toLowerCase().trim();
+        searchInput.addEventListener('input', function () {
+            const query = searchInput.value.toLowerCase().trim();
 
         // 3. Loop through every paper box card
-        paperBoxes.forEach(function (box) {
-           
+        paperBoxes.forEach(function (box) { 
             const boxText = box.textContent.toLowerCase();
-
-            
             if (boxText.includes(query)) {
                 
                 box.style.display = 'block'; 
             } else {
               
                 box.style.display = 'none'; 
-            }
+            }});
         });
-    });
-</script>
+    </script>
     
 
     <footer>
