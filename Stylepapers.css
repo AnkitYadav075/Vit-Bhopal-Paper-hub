@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+#navbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color : rgb(196, 36, 36);
+    background-color: skyblue;
+}
+
+#logo{
+    color: rgb(219, 77, 5);
+    font-size: 20px;
+    text-align:center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#home{
+    margin-left: 600px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align:center;
+    justify-content: center;
+}
+
+#paper{
+    margin-left: 5px;
+    padding: 10px;
+    text-decoration:none;
+    color: black;
+    font-size: 20px;
+    text-align:center;
+    justify-content: center;
+    
+}
+
+.Searchbar{
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 10px;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 13px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.Searchbar{
+    position: relative;
+}
+
+.Searchbar input{
+    width: 300px;
+    font-size: 18px;
+    padding:10px 20px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0,0, 0.2);
+    transition: 0.2s ease-in;
+}
+.Searchbar input:focus{
+    width: 450px;
+}
+
+.Searchbar i{
+    position: relative;
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    margin-top: 8px;
+}
+
+
+input{
+    padding: 12px;
+    border-radius: 15px;
+}
+
+
+#Search{
+    display: flex;
+}
+
+button{
+    padding: 8px;
+    border-radius: 10px 10px ;
+    background-color: #1632cf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+        }
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+        }
+
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+        }
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+     }
+
+.form-group {
+    margin-bottom: 15px;
+        }
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+     color: #444;
+        }
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+        }
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+        }
+
+.submit-btn:hover {
+        background-color: #218838;
+        }
+#upload-btn{
+    height: 40px;
+    display: flex;
+    background-color: #0c5a96; 
+    text-align: center;
+    padding: 10px 25px;
+    margin-left: 900px; 
+    border-radius: 10px 10px;
+    font-size: large;
+    cursor: pointer;
+   
+}
+.grid-container {
+            display: grid;
+            
+            grid-template-columns: repeat(3, 1fr); 
+            
+            gap: 20px; 
+            padding: 20px;
+}
+#grid-container{
+    
+    margin-top: 30px;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.PaperBox {
+            height: 150px;
+            width: 330px;
+            background-color: #dee6ec;
+            color: rgb(2, 13, 15);
+            padding: 40px 20px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            background-image: url("white_background.jpg");
+            border: 2px solid black;
+
+        }
+
+#Paper{
+    margin-top: 50px;
+    font-size: large;
+    font-weight: 500;
+
+}
+#Classid{
+    font-size: 25px;
+    font-weight:bolder;
+    font-display: block;
+    background-color: #e9faf1;
+    border-radius: 15px;
+    
+}
+
+
+footer{
+    background-color: #16c236;
+    text-align: center;
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}

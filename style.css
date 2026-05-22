@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+#PaperHubNavbar{
+    height: 60px;
+    background-color: #299e67;
+    /* display: flex; */
+    align-items: center;
+
+    
+
+}
+#logo{
+    color: rgb(12, 8, 234);
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+    
+
+}
+.home{
+    margin-left: 600px;
+    text-decoration: none;
+}
+
+.paper{
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    height: inherit;
+    flex-direction: row;
+    display: flex;
+   
+}
+#PaperBox1{
+    height: 300px;
+    width: 600px;
+    border: 2px solid #010101;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 0%;
+    background-image: url("photolib.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    border-top-left-radius: 6%;
+    border-bottom-left-radius: 6%;
+    
+
+}
+#a{
+    font-size: 25px;
+    color: rgb(7, 3, 3);
+    margin-left: 20px;
+
+    
+}
+#p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    margin-left:30px;
+}
+#mid{
+    font-size:25px;
+    margin-left: 10px;
+
+}
+#end{
+    font-size: 25px;
+    margin-left: 10px;
+
+    
+}
+#project{
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+button{
+    background-color: #0c9646; 
+    text-align: center;
+    padding: 12px 30px;
+    margin-top: 25px;
+    margin-left: 60px; 
+    border-radius: 10%;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+
+#PaperBox2{
+    
+    height: 300px;
+    width: 600px;
+    border: 2px solid #010101;     
+    display: inline-block; 
+    background-image:url("white_background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin-top: 80px;
+    border-top-right-radius: 6%;
+    border-bottom-right-radius: 6%;
+    
+}
+
+
+
+footer{
+    background-color: #16c236;
+    text-align: center;
+    bottom: 0px;
+    position:fixed;
+    width: 100%;
+    height: 100px;
+}
+
+
+@media (min-width: 360px){
+    body{
+        height: 100px;
+        overflow: hidden;
+    }
+    #PaperHubNavbar{
+    height: 60px;
+    display: flex; }
+
+    #logo{
+        font-size: 16px;
+    }
+
+    a{
+     margin-left:5px ;
+    }
+
+    .home{
+    margin-left: 600px;
+    text-decoration: none;
+    }
+
+   .paper{
+    margin-left: 15px;
+    text-decoration: none;
+   }
+
+
+
+}
