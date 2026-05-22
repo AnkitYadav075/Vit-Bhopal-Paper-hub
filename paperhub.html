@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="1200, initial-scale=1.0">
     <title>All Paper Hub</title>
-   
+    <!-- Fixed the extension style name from .CSS to .css to load correctly on GitHub -->
     <link rel="stylesheet" href="Stylepapers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
@@ -28,7 +28,7 @@
     </div>
     
     <div class="grid-container" id="papersGrid">
-        
+        <!-- Default hardcoded template fallback items -->
         <div class="PaperBox"> <a class="Classid">CSE1021</a><br>Introduction to Problem Solving and Programming <br> Mid-term 2025<br>
             <a href="CSEPdf.html"><button class="Paper"> Paper</button></a></div>
         <div class="PaperBox"> <a class="Classid">EEE1001</a><br> Electric Circuits and Systems<br> Mid-term 2025 <br>
@@ -42,28 +42,33 @@
         <div class="PaperBox"> <a class="Classid">CHY1005</a><br> Introduction to Computational chemistry<br> Mid-term 2026<br>
             <a href="CHYpdf.html"><button class="Paper"> Paper</button></a></div>
     </div>
-
     <script>
+    
     const searchInput = document.querySelector('.Searchbar input');
     const paperBoxes = document.querySelectorAll('.PaperBox');
-r
+
+    
     searchInput.addEventListener('input', function () {
+        
         const query = searchInput.value.toLowerCase().trim();
 
-      
+        // 3. Loop through every paper box card
         paperBoxes.forEach(function (box) {
+           
             const boxText = box.textContent.toLowerCase();
 
-        
+            
             if (boxText.includes(query)) {
-          
+                
                 box.style.display = 'block'; 
             } else {
+              
                 box.style.display = 'none'; 
             }
         });
     });
 </script>
+    
 
     <footer>
         Made by : Ankit Yadav <br>
