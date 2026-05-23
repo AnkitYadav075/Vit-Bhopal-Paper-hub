@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
     <title>All Paper Hub</title>
     <link rel="stylesheet" href="Stylepapers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
@@ -16,8 +16,11 @@
     <header>
         <div id="navbar">
             <a id="logo"> Vit Bhopal Paper Hub</a>
-            <a id="home" href="index.html">Home</a>
-            <a id="paper" href="paperhub.html">Papers</a>
+            <div class="nav-link">
+                <a id="home" href="index.html">Home</a>
+                <a id="paper" href="paperhub.html">Papers</a>
+            </div>
+            
         </div>
     </header>
     
@@ -26,22 +29,34 @@
         <i class="fa fa-search"></i>    
     </div>
     
-    <div class="grid-container" id="papersGrid">
-        <div class="PaperBox"> <a class="Classid">CSE1021</a><br>Introduction to Problem Solving and Programming <br> Mid-term 2025-26<br>
+    <main class="grid-container" id="papersGrid">
+        <div class="PaperBox"> 
+            <a class="Classid">CSE1021</a><br>Introduction to Problem Solving and Programming <br> Mid-term 2025-26<br>
             <a href="CSEPdf.html"><button class="Paper"> Paper</button></a></div>
-        <div class="PaperBox"> <a class="Classid">EEE1001</a><br> Electric Circuits and Systems<br> Mid-term 2025-26 <br>
+        <div class="PaperBox"> 
+            <a class="Classid">EEE1001</a><br> Electric Circuits and Systems<br> Mid-term 2025-26 <br>
             <a href="EEEpdf.html"><button class="Paper"> Paper</button></a></div>
-        <div class="PaperBox"> <a class="Classid">ENG2005</a><br> EFFECTIVE TECHNICAL COMMUNICATION <br> Mid-term 2025-26<br>
+        <div class="PaperBox"> 
+            <a class="Classid">ENG2005</a><br> EFFECTIVE TECHNICAL COMMUNICATION <br> Mid-term 2025-26<br>
             <a href="ENGpdf.html"><button class="Paper"> Paper</button></a></div>
-        <div class="PaperBox"> <a class="Classid">MAT1003</a><br> Calculus <br> Mid-term 2025-26 <br>
+        <div class="PaperBox"> 
+            <a class="Classid">MAT1003</a><br> Calculus <br> Mid-term 2025-26 <br>
             <a href="MATHpdf.html"><button class="Paper"> Paper</button></a></div>
-        <div class="PaperBox"> <a class="Classid">PHY1003</a><br> Introduction to Computational Physics<br> Term-End 2025-26<br>
+        <div class="PaperBox">
+            <a class="Classid">PHY1003</a><br> Introduction to Computational Physics<br> Term-End 2025-26<br>
             <a href="PHYpdf.html"><button class="Paper"> Paper</button></a></div>
-        <div class="PaperBox"> <a class="Classid">CHY1005</a><br> Introduction to Computational chemistry<br> Mid-term 2026<br>
+        <div class="PaperBox"> 
+            <a class="Classid">CHY1005</a><br> Introduction to Computational chemistry<br> Mid-term 2026<br>
             <a href="CHYpdf.html"><button class="Paper"> Paper</button></a></div>
-        <div class="PaperBox"> <a class="Classid">PHY1001</a><br> Introduction to Computational Physics<br> Term-End 2025-26<br>
-            <a href="#"><button class="Paper"> Paper</button></a></div>
-    </div>
+        <div class="PaperBox"> 
+            <a class="Classid">PHY1003</a><br> Introduction to Computational Physics<br> Term-End 2025-26<br>
+            <a href="PHYpdf.html"><button class="Paper"> Paper</button></a></div>
+        <div class="PaperBox"> 
+            <a class="Classid">MAT1003</a><br> Calculus <br> Mid-term 2025-26 <br>
+            <a href="TEDMAT1003.pdf"><button class="Paper"> Paper</button></a></div>    
+    </main>
+
+
     <script>
         const searchInput = document.querySelector('.Searchbar input');
         const paperBoxes = document.querySelectorAll('.PaperBox');
@@ -63,9 +78,9 @@
     </script>
     
 
-    <footer>
-        Made by : Ankit Yadav <br>
-        copyrights @ 2026
-    </footer>
+<footer>
+    Made by : Ankit Yadav <br>
+    copyrights &copy; 2026
+</footer>
 </body>
 </html>
