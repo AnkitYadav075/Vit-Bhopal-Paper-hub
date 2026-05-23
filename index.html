@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
     <title>VIT BHOPAL PAPER HUB</title>
     <link rel="stylesheet" href="style.css">   
 </head>
@@ -10,36 +10,41 @@
     <header>
         <div id="PaperHubNavbar">
             <a id="logo"> VIT BHOPAL PAPER HUB </a>
-            <a href="" class="home">Home</a>
-            <a href="paperhub.html" class="paper">Paper</a>
+            <div class="nav-link">
+                <a href="" class="home">Home</a>
+                <a href="paperhub.html" class="paper">Paper</a>
+            </div>
+            
         </div>
     </header>
 
-    <body>
-        <div id="container">
-            <div id="PaperBox1"> wlcome to VIT Bhopal Paper Hub <br>
+        <main id="container">
+            <div id="PaperBox1"> 
+                <h2>Welcome to VIT Bhopal Paper Hub </h2>
             </div>
             <div id="PaperBox2">
-                <a id="a">Previous Year Semester Papers</a><br>
+                <h1>Previous Year Semester Papers</h1><br>
                 <p id="p">Practicing past papers is the best way to prepare for any exam.</p>
                 <br>
-                <a id="mid">&#9989 Mid-term Papers </a><br>
-                <a id="end">&#9989 End-term Papers </a><br>
-                <a id="project">&#9989 Assignment & Project</a> <br>
+                <ul class="paper-list">
+                    <li><span id="mid">&#9989; Mid-term Papers</span></li>
+                    <li><span id="end">&#9989; End-term Papers</span></li>
+                    <li><span id="project">&#9989; Assignment & Project</span></li>
+                </ul>
                 <a href="paperhub.html">
                     <button>View </button>
                 </a>
                 
 
             </div>
-        </div>
-    </body>
+        </main>
+    
 
 
 
 <footer>
         Made by : Ankit Yadav <br>
-        copyrights @ 2026
+        copyrights &copy; 2026
 </footer>
     
 </body>
