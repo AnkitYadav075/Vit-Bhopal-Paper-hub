@@ -24,10 +24,19 @@ html body {
     
 
 }
-#PaperHubNavbar #logo{
+#PaperHubNavbar{
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+
+
+#logo{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
     text-decoration: none;
     
 
