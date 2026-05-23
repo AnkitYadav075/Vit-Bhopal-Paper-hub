@@ -21,10 +21,18 @@ html, body {
     padding: 15px 40px;
 }
 
-#navbar #logo{
+#navbar {
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+#logo{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
     text-decoration: none;
     
 }
