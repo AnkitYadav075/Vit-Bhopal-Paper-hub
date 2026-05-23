@@ -1,48 +1,55 @@
-*{
+html, body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    border: border-box;
+    padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+        -webkit-text-size-adjust: 100%; /* Prevents mobile font auto-inflation */
+        text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 #navbar{
-    height: 60px;
+    background-color: #035e16;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     color : rgb(196, 36, 36);
-    background-color: skyblue;
+    padding: 15px 40px;
+}
+
+#navbar {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 #logo{
-    color: rgb(219, 77, 5);
-    font-size: 20px;
-    text-align:center;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-#home{
-    margin-left: 600px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
     text-decoration: none;
-    color: black;
-    font-size: 20px;
-    text-align:center;
-    justify-content: center;
+    
 }
 
-#paper{
-    margin-left: 5px;
-    padding: 10px;
-    text-decoration:none;
-    color: black;
-    font-size: 20px;
-    text-align:center;
-    justify-content: center;
-    
+#navbar .nav-link a{
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s;
+}
+
+.Navbar .nav-links a:hover {
+    color: #ffffff;
 }
 
 
 #Content{
-    height: 20px;
+    height: 40px;
     width: 150px;
     margin-top: 20px;
     margin-left: 20px;
@@ -96,10 +103,57 @@ button{
 }
 
 footer{
-    background-color: #16c236;
     text-align: center;
     bottom: 0px;
     position: fixed;
     width: 100%;
     height: 100px;
+    padding: 20px;
+    background-color: #222;
+    color: #bbb;
+    font-size: 0.9rem;
 }
+
+
+
+/**  
+   2. MOBILE LAYOUT (Applies when screen < 768px)
+**/
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+        text-align: center;
+        
+    }
+    
+    .navbar .nav-links a {
+        margin: 0 10px;
+    }
+
+    #logo{
+    font-weight: bold;
+    font-size: -0.8rem;
+    
+    }
+    
+
+    .PaperBox{
+        width: 100%;                
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    button {
+        width: 80%;
+        padding: 12px;
+    }
+
+   
+
+
+}
+
