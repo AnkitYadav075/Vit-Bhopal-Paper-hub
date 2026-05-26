@@ -91,6 +91,7 @@ html, body {
     font-size: larger;
     text-align: center;
 }
+
 button{
     height: 50px;
     width: 150px;
@@ -118,7 +119,6 @@ footer{
 }
 
 
-
 /**  
    2. MOBILE LAYOUT (Applies when screen < 768px)
 **/
@@ -129,8 +129,7 @@ footer{
         flex-direction: column;
         gap: 12px;
         padding: 15px;
-        text-align: center;
-        
+        text-align: center;    
     }
     
     .navbar .nav-links a {
@@ -154,8 +153,6 @@ footer{
     font-size: 14px;
 
    }
-
-
     .PaperBox{
         width: 100%;                
         padding: 20px;
@@ -166,9 +163,5 @@ footer{
         width: 80%;
         padding: 12px;
     }
-
-   
-
-
 }
 
