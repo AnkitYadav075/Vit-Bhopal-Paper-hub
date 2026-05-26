@@ -1,42 +1,37 @@
-html, body {
+html body {
     margin: 0;
     padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f6f9;
-        color: #333;
-        -webkit-text-size-adjust: 100%; /* Prevents mobile font auto-inflation */
-        text-size-adjust: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
-#navbar{
-    background-color: #035e16;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    color : rgb(196, 36, 36);
-    padding: 15px 40px;
-}
 
-#navbar {
+#navbar{
+    
+    background-color: #035e16;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+    
+
+}
+#navbar #logo{
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
-}
-
-
-#logo{
-    color: white;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-decoration: none;
     
-}
 
+}
 #navbar .nav-link a{
     color: #e0e0e0;
     text-decoration: none;
@@ -44,7 +39,7 @@ html, body {
     transition: color 0.2s;
 }
 
-#PaperHubNavbar .nav-links a:hover {
+#navbar .nav-links a:hover {
     color: #ffffff;
 }
 
@@ -162,7 +157,7 @@ footer {
 
 @media (max-width: 768px) {
     
-    .navbar {
+    #navbar {
         flex-direction: column;
         gap: 12px;
         padding: 15px;
@@ -170,9 +165,14 @@ footer {
         
     }
     
-    .navbar .nav-links a {
+    #navbar .nav-links a {
         margin: 0 10px;
     }
+
+    #nav-links{
+        font-size: 14px;
+    }
+
 
     #logo{
     font-weight: bold;
@@ -219,4 +219,3 @@ footer {
     }
 
 }
-
